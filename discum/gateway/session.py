@@ -373,7 +373,7 @@ class Guild(Session):
 
 	@property
 	def memberCount(self):
-		return Session.settings_ready['guilds'][self.guildID]['member_count']
+		return Session.settings_ready['guild'][self.guildID]['member_count']
 
 	@property
 	def description(self):
